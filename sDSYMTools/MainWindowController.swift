@@ -12,7 +12,11 @@ class MainWindowController: NSWindowController {
 
 
     ///Mark 遍历archive文件的主目录
-  
+    @IBAction func aboutMe(_ sender: Any) {
+        
+        (self.contentViewController as! ViewController).showAboutMe(sender)
+    }
+
 
     override func windowDidLoad() {
         super.windowDidLoad()
@@ -21,6 +25,6 @@ class MainWindowController: NSWindowController {
 
 
     }
-  
+
 
 }

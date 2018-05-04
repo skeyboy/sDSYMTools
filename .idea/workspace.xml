@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a500f21d-bb01-4305-a7de-0d12262160c9" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/sDSYMTools/Assets.xcassets/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sDSYMTools/Assets.xcassets/about.imageset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sDSYMTools/Assets.xcassets/about.imageset/about.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sDSYMTools/Assets.xcassets/export.imageset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sDSYMTools/Assets.xcassets/export.imageset/export.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sDSYMTools/Base.lproj/Main.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/sDSYMTools/Base.lproj/Main.storyboard" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sDSYMTools/MainWindowController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/sDSYMTools/MainWindowController.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sDSYMTools/ViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/sDSYMTools/ViewController.swift" afterDir="false" />
     </list>
     <ignored path="$USER_HOME$/Library/Developer/Xcode/DerivedData/sDSYMTools-grdtaxqboqaeuygxnyxybeevaxsa/" />
@@ -20,8 +26,8 @@
       <file leaf-file-name="MainWindowController.swift" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sDSYMTools/MainWindowController.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+            <state relative-caret-position="256">
+              <caret line="16" column="74" selection-start-line="16" selection-start-column="74" selection-end-line="16" selection-end-column="74" />
             </state>
           </provider>
         </entry>
@@ -112,18 +118,19 @@
       <option name="presentableId" value="Default" />
       <updated>1525335693821</updated>
       <workItem from="1525335698562" duration="566000" />
-      <workItem from="1525405878537" duration="3802000" />
+      <workItem from="1525405878537" duration="5233000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4368000" />
+    <option name="totallyTimeSpent" value="5799000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="78" y="23" width="1400" height="767" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2538071" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2538071" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.32686567" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
@@ -131,9 +138,9 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32686567" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3283582" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3283582" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.41343284" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.41343284" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -154,7 +161,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/sDSYMTools/MainWindowController.swift</url>
-          <line>24</line>
+          <line>28</line>
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="2" />
@@ -182,13 +189,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sDSYMTools/ViewController.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache.zip!/ModuleCache/8E3004b/3.1/x86_64/macosx10.12/Foundation.NSRange/Foundation.NSRange.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -196,10 +196,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sDSYMTools/ViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="361" column="68" selection-start-line="361" selection-start-column="68" selection-end-line="361" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sDSYMTools/MainWindowController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        <state relative-caret-position="256">
+          <caret line="16" column="74" selection-start-line="16" selection-start-column="74" selection-end-line="16" selection-end-column="74" />
         </state>
       </provider>
     </entry>
