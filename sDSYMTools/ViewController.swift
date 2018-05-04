@@ -73,8 +73,14 @@ public class DSYMInfo: Info {
 class ViewController: NSViewController {
     var archiveFilesInfo: [Info] = [Info]()
 
+    @IBOutlet weak var errorMessageView: NSTextField!
+    @IBOutlet weak var errorMemoryAddressLabel: NSTextField!
+    @IBOutlet weak var selectedSlideAddressLabel: NSTextField!
+    @IBOutlet weak var selectedUUIDLabel: NSTextField!
+    @IBOutlet weak var radioBox: NSBox!
     @IBOutlet weak var archiveFilesTableView: NSTableView!
     var selectedArchiveInfo:Info?
+    var selectedUUIDInfo:UUIDInfo?
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -85,6 +91,22 @@ class ViewController: NSViewController {
         archiveFilesTableView.delegate = self
         archiveFilesTableView.dataSource = self
         self.archiveFilesTableView.reloadData()
+        
+    }
+    @IBAction func analyseInfo(_ sender: Any) {
+        if self.selectedArchiveInfo == nil {
+            return
+        }
+        if self.selectedUUIDInfo == nil {
+            return
+        }
+        if self.selectedSlideAddressLabel.stringValue == "" || self.errorMemoryAddressLabel.stringValue == "" {
+            return
+        }
+        let commandOCString = String.init(format: "xcrun atos -arch %@ -o \"%@\" -l %@ %@", (self.selectedUUIDInfo?.arch)!, (self.selectedUUIDInfo?.executableFilePath)!, self.selectedSlideAddressLabel.stringValue, self.errorMemoryAddressLabel.stringValue)
+        
+        let result = self.runCommand(commandToRun: commandOCString)
+        self.errorMessageView.stringValue = result
         
     }
 
@@ -259,6 +281,14 @@ extension ViewController{
         
         
     }
+    func resetPreInformation(){
+        self.selectedSlideAddressLabel.stringValue = ""
+        self.selectedUUIDLabel.stringValue = ""
+        self.errorMessageView.stringValue = ""
+        self.selectedArchiveInfo = nil
+    }
+    
+    
 }
 
 extension ViewController: NSTableViewDelegate{
@@ -277,14 +307,45 @@ extension ViewController: NSTableViewDelegate{
         return view
     }
     func tableViewSelectionDidChange(_ notification: Notification) {
+        resetPreInformation()
         let row = (notification.object as! NSTableView).selectedRow
+       
+        if let contentView = self.radioBox.contentView {
+            if contentView.subviews.count > 0 {
+                for sub in contentView.subviews {
+                    sub.removeFromSuperview()
+                }
+            }
+        }
+
         if row == -1 {
-            self.selectedArchiveInfo = nil
             
             return
         }
+       
         self.selectedArchiveInfo = self.archiveFilesInfo[row]
-
+        if let uuidInfos = self.selectedArchiveInfo?.uuidInfos {
+            var index = 0
+            
+            for info in uuidInfos {
+                let radioButton = NSButton.init(frame: NSRect(x: 10, y: index*50, width: 100, height: 45))
+                radioButton.setButtonType(NSButtonType.radio)
+                radioButton.title = info.arch!
+                radioButton.tag = index
+                radioButton.action = #selector(radioButtonAction(sender:))
+                self.radioBox.contentView?.addSubview(radioButton)
+                index += 1
+            }
+        }
+    }
+    @objc func radioButtonAction(sender:NSButton){
+        if sender.tag == -1 {
+            return
+        }
+        let uuidInfo = self.selectedArchiveInfo!.uuidInfos![sender.tag]
+        self.selectedUUIDLabel.stringValue = uuidInfo.uuid ?? ""
+        self.selectedSlideAddressLabel.stringValue = uuidInfo.defaultSlideAddress ?? ""
+        
     }
 }
 extension ViewController:NSTableViewDataSource{

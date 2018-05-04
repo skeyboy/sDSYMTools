@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12121"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -676,7 +677,7 @@
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="197" y="295"/>
+            <point key="canvasLocation" x="207" y="125"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
@@ -838,6 +839,9 @@
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" size="13" name=".PingFangSC-Regular"/>
                                         </buttonCell>
+                                        <connections>
+                                            <action selector="analyseInfo:" target="XfG-lQ-9wD" id="6mI-Qv-uMI"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -869,20 +873,36 @@
                                     <constraint firstItem="UkR-hJ-wZf" firstAttribute="leading" secondItem="6QP-IA-nfp" secondAttribute="leading" id="yWS-bX-3Hr"/>
                                 </constraints>
                             </customView>
+                            <box title="请选择CPU类型" translatesAutoresizingMaskIntoConstraints="NO" id="saT-2I-mjc">
+                                <rect key="frame" x="297" y="352" width="177" height="128"/>
+                                <view key="contentView" id="Pk7-GF-Fef">
+                                    <rect key="frame" x="2" y="2" width="173" height="111"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                            </box>
                         </subviews>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="saT-2I-mjc" secondAttribute="trailing" constant="9" id="1bo-To-zNa"/>
                             <constraint firstItem="16X-4C-pa5" firstAttribute="leading" secondItem="png-iv-2B4" secondAttribute="leading" id="2EF-Mm-zFI"/>
+                            <constraint firstItem="saT-2I-mjc" firstAttribute="top" secondItem="png-iv-2B4" secondAttribute="top" id="77z-Pw-lms"/>
                             <constraint firstAttribute="bottom" secondItem="16X-4C-pa5" secondAttribute="bottom" constant="20" id="DL5-AX-eER"/>
                             <constraint firstItem="16X-4C-pa5" firstAttribute="top" secondItem="wFj-b2-aOA" secondAttribute="bottom" constant="9" id="IBz-K5-aBR"/>
                             <constraint firstItem="16X-4C-pa5" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="14" id="JHH-cs-1q4"/>
                             <constraint firstAttribute="trailing" secondItem="png-iv-2B4" secondAttribute="trailing" constant="182" id="Obj-6n-C80"/>
                             <constraint firstItem="16X-4C-pa5" firstAttribute="top" secondItem="png-iv-2B4" secondAttribute="bottom" constant="8" symbolic="YES" id="R0X-8T-wnP"/>
                             <constraint firstItem="16X-4C-pa5" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="132" id="cc4-UR-SVr"/>
+                            <constraint firstItem="saT-2I-mjc" firstAttribute="leading" secondItem="png-iv-2B4" secondAttribute="trailing" constant="2" id="dsJ-eb-h45"/>
+                            <constraint firstItem="saT-2I-mjc" firstAttribute="bottom" secondItem="png-iv-2B4" secondAttribute="bottom" id="hC9-6B-uQU"/>
                             <constraint firstAttribute="trailing" secondItem="16X-4C-pa5" secondAttribute="trailing" constant="20" id="sDC-98-knq"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="archiveFilesTableView" destination="wFj-b2-aOA" id="lSb-VJ-reV"/>
+                        <outlet property="errorMemoryAddressLabel" destination="MTQ-a2-RdJ" id="9Bo-Ub-bA5"/>
+                        <outlet property="errorMessageView" destination="xaW-1R-zBt" id="vPn-Id-IC7"/>
+                        <outlet property="radioBox" destination="saT-2I-mjc" id="rd4-yy-J5v"/>
+                        <outlet property="selectedSlideAddressLabel" destination="W7v-jY-9uA" id="8b0-b1-1gP"/>
+                        <outlet property="selectedUUIDLabel" destination="6QP-IA-nfp" id="Fwh-Eq-quc"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
