@@ -9,16 +9,23 @@
 import Cocoa
 
 class ViewController: NSViewController {
+    
+    @IBOutlet weak var archiveFilesTableView: NSTableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+
         // Do any additional setup after loading the view.
+        self.view.window?.registerForDraggedTypes([NSColorPboardType, NSFilenamesPboardType])
+        
+        
     }
 
     override var representedObject: Any? {
+
         didSet {
-        // Update the view, if already loaded.
+            // Update the view, if already loaded.
         }
     }
 

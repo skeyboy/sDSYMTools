@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5324AF77209B191A00113918 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5324AF76209B191A00113918 /* Foundation.framework */; };
 		534A9BFD209AE69E00D6FB3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534A9BFC209AE69E00D6FB3E /* AppDelegate.swift */; };
 		534A9BFF209AE69E00D6FB3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534A9BFE209AE69E00D6FB3E /* ViewController.swift */; };
 		534A9C01209AE69E00D6FB3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 534A9C00209AE69E00D6FB3E /* Assets.xcassets */; };
 		534A9C04209AE69E00D6FB3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 534A9C02209AE69E00D6FB3E /* Main.storyboard */; };
 		534A9C0F209AE69E00D6FB3E /* sDSYMToolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534A9C0E209AE69E00D6FB3E /* sDSYMToolsTests.swift */; };
 		534A9C1A209AE69E00D6FB3E /* sDSYMToolsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534A9C19209AE69E00D6FB3E /* sDSYMToolsUITests.swift */; };
+		534A9C28209AE6D200D6FB3E /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534A9C27209AE6D200D6FB3E /* MainWindowController.swift */; };
+		534A9C29209AE6D200D6FB3E /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534A9C27209AE6D200D6FB3E /* MainWindowController.swift */; };
+		534A9C2A209AE6D200D6FB3E /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534A9C27209AE6D200D6FB3E /* MainWindowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5324AF76209B191A00113918 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		534A9BF9209AE69E00D6FB3E /* sDSYMTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sDSYMTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		534A9BFC209AE69E00D6FB3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		534A9BFE209AE69E00D6FB3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +50,7 @@
 		534A9C15209AE69E00D6FB3E /* sDSYMToolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sDSYMToolsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		534A9C19209AE69E00D6FB3E /* sDSYMToolsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sDSYMToolsUITests.swift; sourceTree = "<group>"; };
 		534A9C1B209AE69E00D6FB3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		534A9C27209AE6D200D6FB3E /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5324AF77209B191A00113918 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5324AF75209B191A00113918 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5324AF76209B191A00113918 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		534A9BF0209AE69E00D6FB3E = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +94,7 @@
 				534A9C0D209AE69E00D6FB3E /* sDSYMToolsTests */,
 				534A9C18209AE69E00D6FB3E /* sDSYMToolsUITests */,
 				534A9BFA209AE69E00D6FB3E /* Products */,
+				5324AF75209B191A00113918 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +116,7 @@
 				534A9C00209AE69E00D6FB3E /* Assets.xcassets */,
 				534A9C02209AE69E00D6FB3E /* Main.storyboard */,
 				534A9C05209AE69E00D6FB3E /* Info.plist */,
+				534A9C27209AE6D200D6FB3E /* MainWindowController.swift */,
 			);
 			path = sDSYMTools;
 			sourceTree = "<group>";
@@ -257,6 +274,7 @@
 			files = (
 				534A9BFF209AE69E00D6FB3E /* ViewController.swift in Sources */,
 				534A9BFD209AE69E00D6FB3E /* AppDelegate.swift in Sources */,
+				534A9C28209AE6D200D6FB3E /* MainWindowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				534A9C29209AE6D200D6FB3E /* MainWindowController.swift in Sources */,
 				534A9C0F209AE69E00D6FB3E /* sDSYMToolsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				534A9C2A209AE6D200D6FB3E /* MainWindowController.swift in Sources */,
 				534A9C1A209AE69E00D6FB3E /* sDSYMToolsUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,6 +518,7 @@
 				534A9C20209AE69E00D6FB3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		534A9C21209AE69E00D6FB3E /* Build configuration list for PBXNativeTarget "sDSYMToolsTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +527,7 @@
 				534A9C23209AE69E00D6FB3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		534A9C24209AE69E00D6FB3E /* Build configuration list for PBXNativeTarget "sDSYMToolsUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +536,7 @@
 				534A9C26209AE69E00D6FB3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
