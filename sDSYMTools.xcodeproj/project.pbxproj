@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		5324AF77209B191A00113918 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5324AF76209B191A00113918 /* Foundation.framework */; };
+		5324AF79209C598B00113918 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5324AF78209C598B00113918 /* AboutViewController.swift */; };
+		5324AF7A209C598B00113918 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5324AF78209C598B00113918 /* AboutViewController.swift */; };
+		5324AF7B209C598B00113918 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5324AF78209C598B00113918 /* AboutViewController.swift */; };
 		534A9BFD209AE69E00D6FB3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534A9BFC209AE69E00D6FB3E /* AppDelegate.swift */; };
 		534A9BFF209AE69E00D6FB3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534A9BFE209AE69E00D6FB3E /* ViewController.swift */; };
 		534A9C01209AE69E00D6FB3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 534A9C00209AE69E00D6FB3E /* Assets.xcassets */; };
@@ -38,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		5324AF76209B191A00113918 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5324AF78209C598B00113918 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		534A9BF9209AE69E00D6FB3E /* sDSYMTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sDSYMTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		534A9BFC209AE69E00D6FB3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		534A9BFE209AE69E00D6FB3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +121,7 @@
 				534A9C02209AE69E00D6FB3E /* Main.storyboard */,
 				534A9C05209AE69E00D6FB3E /* Info.plist */,
 				534A9C27209AE6D200D6FB3E /* MainWindowController.swift */,
+				5324AF78209C598B00113918 /* AboutViewController.swift */,
 			);
 			path = sDSYMTools;
 			sourceTree = "<group>";
@@ -274,6 +279,7 @@
 			files = (
 				534A9BFF209AE69E00D6FB3E /* ViewController.swift in Sources */,
 				534A9BFD209AE69E00D6FB3E /* AppDelegate.swift in Sources */,
+				5324AF79209C598B00113918 /* AboutViewController.swift in Sources */,
 				534A9C28209AE6D200D6FB3E /* MainWindowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5324AF7A209C598B00113918 /* AboutViewController.swift in Sources */,
 				534A9C29209AE6D200D6FB3E /* MainWindowController.swift in Sources */,
 				534A9C0F209AE69E00D6FB3E /* sDSYMToolsTests.swift in Sources */,
 			);
@@ -291,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5324AF7B209C598B00113918 /* AboutViewController.swift in Sources */,
 				534A9C2A209AE6D200D6FB3E /* MainWindowController.swift in Sources */,
 				534A9C1A209AE69E00D6FB3E /* sDSYMToolsUITests.swift in Sources */,
 			);

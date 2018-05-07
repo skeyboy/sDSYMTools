@@ -135,7 +135,7 @@ extension ViewController {
             print("\(url) \(error)")
             return true
         }
-        let fast = enumerator?.makeIterator()
+        var fast = enumerator?.makeIterator()
         var dysmFilePaths = [NSURL]()
         while let next: NSURL = fast?.next() as? NSURL {
 
@@ -362,8 +362,9 @@ extension ViewController: NSTableViewDelegate {
 self.selectedUUIDInfo = uuidInfo
     }
 
-    @objc public func showAboutMe(_ sender: Any) {
-        performSegue(withIdentifier: "show_about_me", sender: sender)
+    @objc public func showAboutMe() {
+        
+        performSegue(withIdentifier: "show_about_me", sender: nil)
     }
 }
 

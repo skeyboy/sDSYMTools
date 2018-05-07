@@ -8,6 +8,7 @@
       <change afterPath="$PROJECT_DIR$/sDSYMTools/Assets.xcassets/export.imageset/Contents.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/sDSYMTools/Assets.xcassets/export.imageset/export.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sDSYMTools.xcodeproj/xcuserdata/sk.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" beforeDir="false" afterPath="$PROJECT_DIR$/sDSYMTools.xcodeproj/xcuserdata/sk.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sDSYMTools/Base.lproj/Main.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/sDSYMTools/Base.lproj/Main.storyboard" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sDSYMTools/MainWindowController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/sDSYMTools/MainWindowController.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sDSYMTools/ViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/sDSYMTools/ViewController.swift" afterDir="false" />
@@ -118,16 +119,15 @@
       <option name="presentableId" value="Default" />
       <updated>1525335693821</updated>
       <workItem from="1525335698562" duration="566000" />
-      <workItem from="1525405878537" duration="5233000" />
+      <workItem from="1525405878537" duration="5496000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5799000" />
+    <option name="totallyTimeSpent" value="6062000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="78" y="23" width="1400" height="767" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2538071" />
@@ -138,9 +138,9 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32686567" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3283582" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3283582" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.41343284" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.41343284" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
