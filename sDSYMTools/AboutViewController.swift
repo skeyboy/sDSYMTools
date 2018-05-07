@@ -35,7 +35,7 @@ self.view.window?.sheetParent?.endSheet(self.view.window!, returnCode: NSModalRe
         self.title = "关于"
         self.github.isEnabled = true
         
-        let githubURL = URL(string: "https://github.com/skeyboy")
+        let githubURL = URL(string: "https://github.com/skeyboy/sDSYMTools")
         
         self.github.allowsEditingTextAttributes = true
         
